@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br />
+    <img alt="gambar" id="image" />
+
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                    "src",
+                    "https://awsimages.detik.net.id/community/media/visual/2016/05/30/9b70078d-4fad-4325-b37f-d7e27801071c_11.jpg?w=700&q=90"
+                );
+                alert("ini gambar gorila");
+            } else if(drop_img == "singa"); {
+                image.setAttribute(
+                    "src",
+                    "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/5/9/5d4fdfc2-e279-444b-b67b-2bccf1ff127b.jpg"
+                );
+                alert("ini gambar singa");
+            } 
+        }
+    </script>
+</body>
+</html>
