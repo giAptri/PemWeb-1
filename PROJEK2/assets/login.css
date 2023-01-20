@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(248, 249, 250);
+}
+
+.container {
+  background: rgb(78, 69, 209);
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 250);
+  padding: 2em;
+}
+
+.container h1 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+#login-form {
+  margin: 0.2em 0;
+}
+
+#login-form label {
+  color: rgba(255, 255, 255, 0.781);
+}
+
+#login-form .wrapper {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin: 0.5em 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(31, 14, 180), rgb(187, 179, 190));
+}
+
+#login-form .wrapper > input[type=text], input[type=password] {
+  position: absolute;
+  width: 98%;
+  height: 40px;
+  margin: 0.21em 0.2em;
+  background: rgb(247, 247, 250);
+  color: rgb(14, 14, 13);
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all .4s;
+}
+
+#login-form .wrapper >
+input[type=text]:focus::placeholder,
+input[type=password]:focus::placeholder {
+  color: rgb(20, 20, 20);
+}
+
+#login-form label[for="rememberMe"] {
+  font-size: 0.8em;
+  padding-left: 0.2em;
+  color: rgba(20, 20, 20, 0.623);
+}
+
+#login-form .btn {
+  width: 103%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 2em 0 1em;
+  transform: translate(-1%);
+  cursor: pointer;
+  color: rgb(12, 12, 12);
+  background: rgb(243, 244, 245);
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#login-form .btn:hover {
+  transform: translate(-1%, 5%);
+  background: rgb(95, 95, 212);
+}
+
+.container p {
+  font-size: 0.8em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.container p a {
+  color: cadetblue;
+}
+
+#login-form a {
+  color: darkkhaki;
+  font-size: 0.8em;
+  float: right;
+  margin: 0.4em 0;
+}
+
+.container a:hover, #login-form a:hover {
+  color: hotpink;
+}
